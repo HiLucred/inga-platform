@@ -31,6 +31,7 @@ export function MobileMenu() {
 
   return (
     <Collapsible.Root open={open} onOpenChange={setOpen}>
+      {/* - Hamburguer menu */}
       <Collapsible.Trigger asChild>
         <button
           title="Mobile menu"
@@ -41,7 +42,8 @@ export function MobileMenu() {
       </Collapsible.Trigger>
 
       <Collapsible.Content>
-        <div className="fixed right-0 top-0 mt-16 h-full w-full bg-zinc-900 px-[2%]">
+        <div className="fixed right-0 top-0 z-50 mt-16 h-full w-full bg-zinc-900 px-[2%]">
+          {/* - Menu items */}
           <ul className="m-auto mt-4 flex flex-col gap-2">
             {itemsMenu.map((itemMenu, index) => {
               return (
@@ -54,9 +56,9 @@ export function MobileMenu() {
               )
             })}
           </ul>
-
+          {/* - Separator */}
           <div className="my-6 h-[1px] bg-zinc-800" />
-
+          {/* - Others menu items */}
           <ul className="m-auto mt-4 flex flex-col gap-2">
             {otherItemsMenu.map((otherItemMenu, index) => {
               return (
