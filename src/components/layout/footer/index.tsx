@@ -3,7 +3,7 @@ import Logo from '../../../../public/inga-logo.svg'
 
 export function Footer() {
   return (
-    <footer className="mt-10 flex w-screen items-center justify-center border-t-[1px] border-zinc-800 bg-black py-8">
+    <footer className="mt-10 flex w-full items-center justify-center border-t-[1px] border-zinc-800 bg-black py-8">
       <Image src={Logo} alt="Logo da INGA" />
     </footer>
   )
