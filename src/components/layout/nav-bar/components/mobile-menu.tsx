@@ -12,6 +12,7 @@ import {
   BookHeart,
   UserRound,
   Settings,
+  Bookmark,
 } from 'lucide-react'
 
 const itemsMenu = [
@@ -19,6 +20,7 @@ const itemsMenu = [
   { name: 'Destaques', icon: <Sparkles /> },
   { name: 'Categorias', icon: <LayoutGrid /> },
   { name: 'Avaliações', icon: <BookHeart /> },
+  { name: 'Favoritos', icon: <Bookmark /> },
 ]
 
 const otherItemsMenu = [
