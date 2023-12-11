@@ -20,7 +20,7 @@ export function ExploreNewArtistsSection() {
 
       <div className="flex gap-2 overflow-hidden rounded-md border border-zinc-800 bg-white bg-opacity-5 p-2">
         {Array.from({ length: 16 }).map((_, index) => {
-          return <Avatar key={index} size="base" />
+          return <Avatar key={index} className="h-32 w-32" />
         })}
       </div>
     </section>

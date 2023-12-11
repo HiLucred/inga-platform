@@ -25,7 +25,7 @@ export function ArtistOfTheDaySection() {
 
           <div className="flex w-full flex-col items-center justify-center gap-2 text-white">
             <Crown />
-            <Avatar size="large" />
+            <Avatar className="h-36 w-36" />
             <h3 className="text-sm font-semibold ">@galupd</h3>
           </div>
         </div>

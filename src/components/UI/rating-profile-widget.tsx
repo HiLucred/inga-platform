@@ -13,7 +13,7 @@ export function RatingProfileWidget({
 }: RatingProfileWidgetProps) {
   return (
     <div className="flex gap-2 text-white">
-      <Avatar size="sm" />
+      <Avatar />
 
       <div className="flex flex-col justify-between">
         <h3 className="text-sm font-semibold ">@{username}</h3>
