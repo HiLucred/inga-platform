@@ -5,7 +5,7 @@ import { ChevronRight } from 'lucide-react'
 export function ExploreNewArtistsSection() {
   return (
     <section>
-      <header className="flex items-center justify-between">
+      <div className="flex items-center justify-between">
         <h2 className="mb-2 text-xl font-semibold text-zinc-200">
           Descubra um artista novo
         </h2>
@@ -16,11 +16,11 @@ export function ExploreNewArtistsSection() {
             <ChevronRight width={16} />
           </span>
         </Link>
-      </header>
+      </div>
 
-      <div className="flex w-full items-center gap-1 overflow-hidden rounded-md border border-zinc-800 bg-white bg-opacity-5 p-2">
+      <div className="flex gap-2 overflow-hidden rounded-md border border-zinc-800 bg-white bg-opacity-5 p-2">
         {Array.from({ length: 16 }).map((_, index) => {
-          return <Avatar key={index} />
+          return <Avatar key={index} size="base" />
         })}
       </div>
     </section>

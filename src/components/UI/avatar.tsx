@@ -7,7 +7,7 @@ interface AvatarProps extends ComponentProps<'img'> {
   size?: 'sm' | 'base' | 'large'
 }
 
-const width = {
+const sizeOptions = {
   sm: 12,
   base: 32,
   large: 36,
@@ -18,7 +18,10 @@ export function Avatar({ size = 'base', className }: AvatarProps) {
     <Image
       src={User}
       alt=""
-      className={twMerge(`rounded-full w-${width[size]}`, className)}
+      className={twMerge(
+        `rounded-full w-${sizeOptions[size]} h-${sizeOptions[size]}`,
+        className,
+      )}
     />
   )
 }
