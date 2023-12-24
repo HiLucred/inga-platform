@@ -24,7 +24,6 @@ export function CustomListsSection() {
             <GameListCard
               key={index}
               title="Jogos que marcaram minha infância"
-              author="galupd"
               rating={821}
               comments={61}
             />

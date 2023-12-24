@@ -1,12 +1,15 @@
 import { ComponentProps } from 'react'
 import { twMerge } from 'tailwind-merge'
+import { RatingType } from '@/types/rating'
 import { InspectionDialog as InspectionButton } from '../inspection-dialog'
 import { FavoriteButton } from '../UI/button/favorite-button'
 import { Rating } from '../UI/rating'
 
-type GameCardProps = ComponentProps<'div'>
+interface GameCardProps extends ComponentProps<'div'> {
+  rating: RatingType
+}
 
-export function GameCard({ className }: GameCardProps) {
+export function GameCard({ rating, className }: GameCardProps) {
   return (
     <div className={twMerge('flex flex-col gap-1', className)}>
       <div className="relative h-48 w-36 rounded-md bg-white bg-opacity-20">
@@ -15,7 +18,7 @@ export function GameCard({ className }: GameCardProps) {
       </div>
 
       <div className="flex w-full flex-col items-center justify-center">
-        <Rating rating={4} />
+        <Rating rating={rating} />
         <span className="text-xs text-zinc-700">4/5</span>
       </div>
     </div>
