@@ -5,8 +5,8 @@ import { ChevronRight } from 'lucide-react'
 export function CustomListsSection() {
   return (
     <section>
-      <header className="flex items-center justify-between">
-        <h2 className="mb-2 text-xl font-semibold text-zinc-200">
+      <header className="mb-2 flex  items-center justify-between">
+        <h2 className="text-xl font-semibold text-zinc-200">
           Listas personalizadas
         </h2>
 

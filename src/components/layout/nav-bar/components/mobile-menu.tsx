@@ -44,7 +44,7 @@ export function MobileMenu() {
       </Collapsible.Trigger>
 
       <Collapsible.Content>
-        <div className="fixed right-0 top-0 z-50 mt-16 h-screen w-full bg-zinc-900 px-[4%]">
+        <div className="fixed right-0 top-0 z-50 mt-16 h-screen w-full overflow-y-auto bg-zinc-900 px-[4%] pb-8">
           {/* - Menu items */}
           <ul className="m-auto mt-4 flex flex-col gap-2">
             {itemsMenu.map((itemMenu, index) => {

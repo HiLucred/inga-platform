@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import User from '../../../public/mockup/user-place-holder.jpg'
+import User from '@/mockup/user-place-holder.jpg'
 import { twMerge } from 'tailwind-merge'
 import { ComponentProps } from 'react'
 
@@ -17,8 +17,8 @@ export function Avatar({ className }: AvatarProps) {
       src={User}
       alt=""
       width={320}
-      height={320}
-      className={twMerge('h-12 w-12 rounded-full', className)}
+      // height={320}
+      className={twMerge('h-12 w-12 rounded-md', className)}
     />
   )
 }
