@@ -17,7 +17,11 @@ export function RatingProfileWidget({
 
       <div className="flex flex-col justify-between">
         <h3 className="text-sm font-semibold ">@{username}</h3>
-        <Rating rating={rating} />
+
+        <div className="flex items-center gap-2">
+          <Rating rating={rating} />
+          <span className="text-xs text-zinc-700">{rating}/5</span>
+        </div>
       </div>
     </div>
   )

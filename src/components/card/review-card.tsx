@@ -10,11 +10,15 @@ export function ReviewCard() {
 
         <div className="my-2 h-[1px] w-full bg-zinc-800" />
 
-        <p className="overflow-y-hidden text-sm text-white">
+        <p className="line-clamp-4 text-sm text-white">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eum
           magni quaerat beatae eligendi! Ex ea sae saepe quibus saepe quibus
           quaerat beatae eligendi...
         </p>
+
+        <button className="mt-3 rounded-md bg-white bg-opacity-5  p-2 text-sm font-semibold text-white">
+          Ir para review
+        </button>
       </div>
     </div>
   )

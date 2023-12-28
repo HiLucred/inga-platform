@@ -19,7 +19,7 @@ export function GameCard({ rating, className }: GameCardProps) {
 
       <div className="flex w-full flex-col items-center justify-center">
         <Rating rating={rating} />
-        <span className="text-xs text-zinc-700">4/5</span>
+        <span className="text-xs text-zinc-700">{rating}/5</span>
       </div>
     </div>
   )

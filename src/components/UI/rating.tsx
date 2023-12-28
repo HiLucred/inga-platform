@@ -9,8 +9,8 @@ interface RatingProps extends ComponentProps<'div'> {
 
 export function Rating({ rating, className }: RatingProps) {
   const defaultClassName = 'opacity-50'
-  const filledTriangleClassName = 'text-blue-600 fill-blue-600 opacity-80'
-  const filledCircleClassName = 'text-pink-600 fill-pink-600 opacity-80'
+  const filledTriangleClassName = 'text-blue-600 fill-blue-600 '
+  const filledCircleClassName = 'text-pink-600 fill-pink-600 '
 
   return (
     <div className={twMerge('flex gap-x-0.5 text-white', className)}>
