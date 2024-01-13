@@ -21,7 +21,7 @@ export function GameListCard({ title, rating, comments }: GameListCardProps) {
             <ThumbsUpIcon width={16} className="text-blue-500" />
           </div>
 
-          <DotIcon className=" text-zinc-700" />
+          <DotIcon className="text-zinc-700" />
 
           <div className="flex items-center gap-1">
             <span className="text-xs">{comments}</span>

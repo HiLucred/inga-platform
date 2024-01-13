@@ -37,10 +37,13 @@ export function InspectionDialog({ className }: InspectionDialogProps) {
 
         <Dialog.Content asChild>
           <div className="fixed bottom-0 left-0 right-0 w-screen gap-2 border-t border-zinc-800 bg-zinc-900 bg-opacity-75 p-4 backdrop-blur-lg backdrop-filter data-[state=open]:animate-slideUp">
-            <div className="flex w-full gap-4 text-white">
-              <div className="h-48 w-36 rounded-md bg-white bg-opacity-20" />
+            <div className="flex w-full text-white">
+              {/**
+               *  -> Imagem do Jogo
+               */}
+              <div className="h-48 w-36 rounded-md border border-red-500 bg-white bg-opacity-20" />
 
-              <div className="flex h-48 flex-1 flex-col justify-between">
+              <div className="flex w-full flex-col overflow-hidden border border-blue-500">
                 <div>
                   <h2 className="text-lg font-bold">
                     Vestígios de um domingo incógnito
