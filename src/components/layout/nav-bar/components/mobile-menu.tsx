@@ -4,28 +4,28 @@ import * as Collapsible from '@radix-ui/react-collapsible'
 import Link from 'next/link'
 import { useState } from 'react'
 import {
-  Menu,
-  X as MenuClose,
-  Gamepad,
-  Sparkles,
-  LayoutGrid,
-  BookHeart,
-  UserRound,
-  Settings,
-  Bookmark,
+  MenuIcon,
+  XIcon as MenuCloseIcon,
+  GamepadIcon,
+  SparklesIcon,
+  LayoutGridIcon,
+  BookHeartIcon,
+  UserRoundIcon,
+  SettingsIcon,
+  BookmarkIcon,
 } from 'lucide-react'
 
 const itemsMenu = [
-  { name: 'Jogos', icon: <Gamepad /> },
-  { name: 'Destaques', icon: <Sparkles /> },
-  { name: 'Categorias', icon: <LayoutGrid /> },
-  { name: 'Avaliações', icon: <BookHeart /> },
-  { name: 'Favoritos', icon: <Bookmark /> },
+  { name: 'Jogos', icon: <GamepadIcon /> },
+  { name: 'Destaques', icon: <SparklesIcon /> },
+  { name: 'Categorias', icon: <LayoutGridIcon /> },
+  { name: 'Avaliações', icon: <BookHeartIcon /> },
+  { name: 'Favoritos', icon: <BookmarkIcon /> },
 ]
 
 const otherItemsMenu = [
-  { name: 'Perfil', icon: <UserRound /> },
-  { name: 'Configurações', icon: <Settings /> },
+  { name: 'Perfil', icon: <UserRoundIcon /> },
+  { name: 'Configurações', icon: <SettingsIcon /> },
 ]
 
 export function MobileMenu() {
@@ -39,12 +39,12 @@ export function MobileMenu() {
           title="Mobile menu"
           className="rounded-md bg-opacity-50 p-2 text-white hover:bg-zinc-900 data-[state=open]:bg-zinc-900"
         >
-          {open ? <MenuClose /> : <Menu />}
+          {open ? <MenuCloseIcon /> : <MenuIcon />}
         </button>
       </Collapsible.Trigger>
 
       <Collapsible.Content>
-        <div className="fixed right-0 top-0 z-50 mt-16 h-screen w-full overflow-y-auto bg-zinc-900 px-[4%] pb-8">
+        <div className="fixed right-0 top-0 z-50 mt-16 h-screen w-full overflow-y-auto bg-zinc-900 bg-opacity-80 px-[4%] pb-8 backdrop-blur-lg backdrop-filter">
           {/* - Menu items */}
           <ul className="m-auto mt-4 flex flex-col gap-2">
             {itemsMenu.map((itemMenu, index) => {

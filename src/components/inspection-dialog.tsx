@@ -11,6 +11,7 @@ import {
   CircleIcon,
   BookmarkIcon,
   TriangleIcon,
+  XIcon,
 } from 'lucide-react'
 import { Rating } from './UI/rating'
 import { Avatar } from './UI/avatar'
@@ -33,19 +34,27 @@ export function InspectionDialog({ className }: InspectionDialogProps) {
       </Dialog.Trigger>
 
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-95 transition-all" />
+        <Dialog.Overlay className="fixed inset-0 z-30 bg-black bg-opacity-70 transition-all" />
 
         <Dialog.Content asChild>
-          <div className="fixed bottom-0 left-0 right-0 w-screen gap-2 border-t border-zinc-800 bg-zinc-900 bg-opacity-75 p-4 backdrop-blur-lg backdrop-filter data-[state=open]:animate-slideUp">
-            <div className="flex w-full text-white">
-              {/**
-               *  -> Imagem do Jogo
-               */}
-              <div className="h-48 w-36 rounded-md border border-red-500 bg-white bg-opacity-20" />
+          <div className="fixed bottom-0 left-0 right-0 z-50 w-screen gap-2 border-t border-zinc-800 bg-black bg-opacity-75 p-4 backdrop-blur-lg backdrop-filter data-[state=open]:animate-slideUp">
+            <div className="flex w-full flex-col gap-4 text-white">
+              <header className="flex w-full items-start justify-between">
+                {/**
+                 *  -> Imagem do Jogo
+                 */}
+                <div className="h-48 w-36 rounded-md bg-white bg-opacity-20" />
 
-              <div className="flex w-full flex-col overflow-hidden border border-blue-500">
+                <Dialog.Close asChild>
+                  <button>
+                    <XIcon />
+                  </button>
+                </Dialog.Close>
+              </header>
+
+              <div className="flex flex-1 flex-col">
                 <div>
-                  <h2 className="text-lg font-bold">
+                  <h2 className="text-base font-bold">
                     Vestígios de um domingo incógnito
                   </h2>
 
@@ -56,14 +65,14 @@ export function InspectionDialog({ className }: InspectionDialogProps) {
                   </div>
                 </div>
 
-                <div className="mt-0.5 h-[1px] w-full bg-zinc-800" />
+                <div className="my-2 h-[1px] w-full bg-zinc-800" />
 
-                <div className="flex  items-center gap-2">
+                <div className="flex items-center gap-2">
                   <Rating rating={3} />
                   <span className="text-xs text-zinc-700">3/5</span>
                 </div>
 
-                <div className="flex items-center gap-2">
+                <div className="mt-4 flex items-center gap-2">
                   <button className="flex items-center justify-center gap-1 rounded-md bg-white bg-opacity-5 px-4 py-2 text-sm text-white">
                     <ThumbsUpIcon width={16} />
                   </button>
