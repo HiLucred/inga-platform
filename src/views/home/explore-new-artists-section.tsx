@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { Avatar } from '@/components/UI/avatar'
 import { ChevronRight } from 'lucide-react'
+import { AuthorsCarousel } from '@/components/authors-carousel'
 
 export function ExploreNewArtistsSection() {
   return (
@@ -18,11 +18,7 @@ export function ExploreNewArtistsSection() {
         </Link>
       </div>
 
-      <div className="flex gap-2 overflow-hidden rounded-md border border-zinc-800 bg-white bg-opacity-5 p-2">
-        {Array.from({ length: 16 }).map((_, index) => {
-          return <Avatar key={index} className="h-32 w-32" />
-        })}
-      </div>
+      <AuthorsCarousel />
     </section>
   )
 }

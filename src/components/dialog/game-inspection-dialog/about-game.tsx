@@ -10,7 +10,7 @@ export function AboutGame() {
   return (
     <div className="flex flex-1 flex-col">
       <div>
-        <h2 className="text-base font-bold">
+        <h2 className="text-base font-bold text-white">
           Vestígios de um domingo incógnito
         </h2>
 
@@ -29,14 +29,23 @@ export function AboutGame() {
       </div>
 
       <div className="mt-4 flex items-center gap-2">
-        <button className="flex items-center justify-center gap-1 rounded-md bg-zinc-800 bg-opacity-50 px-4 py-2 text-sm text-white hover:opacity-70">
+        <button
+          aria-label="Dar gostei"
+          className="flex items-center justify-center gap-1 rounded-md bg-zinc-800 bg-opacity-50 px-4 py-2 text-sm text-white hover:opacity-70"
+        >
           <ThumbsUpIcon width={16} />
         </button>
-        <button className="flex items-center justify-center gap-1 rounded-md bg-zinc-800 bg-opacity-50 px-4 py-2 text-sm  text-white hover:opacity-70">
+        <button
+          aria-label="Comentar sobre o jogo"
+          className="flex items-center justify-center gap-1 rounded-md bg-zinc-800 bg-opacity-50 px-4 py-2 text-sm  text-white hover:opacity-70"
+        >
           <MessageSquareIcon width={16} />
         </button>
 
-        <button className="flex items-center justify-center gap-1 rounded-md bg-white px-4 py-2 text-sm font-semibold text-black hover:opacity-90">
+        <button
+          aria-label="Avaliar jogo"
+          className="flex items-center justify-center gap-1 rounded-md bg-white px-4 py-2 text-sm font-semibold text-black hover:opacity-90"
+        >
           Avaliar
           <div className="flex">
             <TriangleIcon width={16} />

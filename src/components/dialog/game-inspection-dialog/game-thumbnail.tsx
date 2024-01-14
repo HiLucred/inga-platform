@@ -13,7 +13,10 @@ export function GameThumbnail() {
       />
 
       <Dialog.Close asChild>
-        <button className="rounded-md bg-zinc-900 bg-opacity-50 p-2 text-white">
+        <button
+          aria-label="Fechar janela"
+          className="rounded-md bg-zinc-900 bg-opacity-50 p-2 text-white"
+        >
           <XIcon />
         </button>
       </Dialog.Close>
