@@ -26,7 +26,7 @@ export function GameCard({ rating, className }: GameCardProps) {
 
       <div className="flex w-full flex-col items-center justify-center">
         <h2 className="mb-2 line-clamp-2 text-center text-sm font-semibold text-gray-300">
-          Vestígios de um domingo incógnito
+          Favorite Worst Nightmare
         </h2>
         <Rating rating={rating} />
         <span className="text-xs text-zinc-700">{rating}/5</span>

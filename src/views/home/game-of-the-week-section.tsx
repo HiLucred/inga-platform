@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
+import Image from 'next/image'
+import { Rating } from '@/components/UI/rating'
 
 export function GameOfTheWeekSection() {
   return (
@@ -18,17 +20,33 @@ export function GameOfTheWeekSection() {
       </header>
 
       <div className="w-fulloverflow-hidden h-full rounded-md bg-gradient-to-tr from-blue-500 to-pink-700 p-0.5">
-        <div className="flex gap-2 rounded-md  bg-zinc-900 p-2">
-          <div className="h-48 w-36 rounded-md bg-white bg-opacity-20" />
+        <div className="flex gap-2 rounded-md bg-zinc-900 p-2">
+          <Image
+            src="/mockup/game-thumbnail-mockup.png"
+            alt=""
+            width={144}
+            height={192}
+            className="h-48 w-36 rounded-lg"
+          />
 
-          <div className="flex flex-1 flex-col gap-2">
-            <div className="rounded-md bg-zinc-800 py-4 ">
-              <h3 className="flex items-center justify-center gap-2 text-center font-bold text-white">
-                Outer Wilds
-              </h3>
+          <div className="flex flex-1 flex-col justify-between gap-2">
+            <div className="w-full border-b border-white border-opacity-10 pb-2">
+              <Link href="/">
+                <h3 className="line-clamp-2 text-lg font-bold text-white hover:opacity-80">
+                  Favorite Worst Nightmare
+                </h3>
+              </Link>
             </div>
-
-            <div className="flex items-center justify-center rounded-md bg-zinc-800 py-4 pl-4 " />
+            <p className="line-clamp-4 text-xs text-white">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+              provident quod necessitatibus fugiat debitis, tempora, cupiditate,
+              consequatur corporis saepe ratione nisi aut cum itaque dolorum
+              quo! Rerum soluta recusandae cum?
+            </p>
+            <div className="flex items-center justify-center gap-2 rounded-lg bg-zinc-800 py-2">
+              <Rating rating={3} />
+              <span className="text-xs text-gray-400">3/5</span>
+            </div>
           </div>
         </div>
       </div>

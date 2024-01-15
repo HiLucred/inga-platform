@@ -11,7 +11,7 @@ export function AboutGame() {
     <div className="flex flex-1 flex-col">
       <div>
         <h2 className="text-base font-bold text-white">
-          Vestígios de um domingo incógnito
+          Favorite Worst Nightmare
         </h2>
 
         <div className="mt-1 flex gap-2 text-zinc-400">

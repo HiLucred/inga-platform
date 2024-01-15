@@ -7,9 +7,10 @@ export function GameThumbnail() {
     <header className="flex w-full items-start justify-between">
       <Image
         src="/mockup/game-thumbnail-mockup.png"
-        alt="Capa de jogo"
+        alt=""
         width={144}
         height={192}
+        className="rounded-lg"
       />
 
       <Dialog.Close asChild>
