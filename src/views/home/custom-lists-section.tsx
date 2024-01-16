@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { GameListCard } from '@/components/card/game-list-card'
 import { ChevronRight } from 'lucide-react'
+import { CustomListCarousel } from '@/components/custom-list-carousel'
 
 export function CustomListsSection() {
   return (
@@ -18,18 +18,7 @@ export function CustomListsSection() {
         </Link>
       </header>
 
-      <div className="flex w-full items-center gap-2 overflow-hidden rounded-md border border-zinc-800 bg-white bg-opacity-5 p-2">
-        {Array.from({ length: 16 }).map((_, index) => {
-          return (
-            <GameListCard
-              key={index}
-              title="Jogos que marcaram minha infância"
-              rating={821}
-              comments={61}
-            />
-          )
-        })}
-      </div>
+      <CustomListCarousel />
     </section>
   )
 }

@@ -12,8 +12,8 @@ interface GameCardProps extends ComponentProps<'div'> {
 
 export function GameCard({ rating, className }: GameCardProps) {
   return (
-    <div className={twMerge('flex flex-col gap-1', className)}>
-      <div className="relative h-48 w-36 overflow-hidden rounded-md bg-white bg-opacity-20">
+    <div className={twMerge('flex flex-col', className)}>
+      <div className="relative h-48 w-36 overflow-hidden rounded-t-md bg-white bg-opacity-20">
         <Image
           src="/mockup/game-thumbnail-mockup.png"
           alt="Capa de jogo"
@@ -24,13 +24,14 @@ export function GameCard({ rating, className }: GameCardProps) {
         <InspectionButton className="absolute right-1 top-10" />
       </div>
 
-      <div className="flex w-full flex-col items-center justify-center">
-        <h2 className="mb-2 line-clamp-2 text-center text-sm font-semibold text-gray-300">
-          Favorite Worst Nightmare
-        </h2>
+      <div className="flex h-full w-full flex-col items-center  justify-center rounded-b-md bg-black/40 py-1">
         <Rating rating={rating} />
         <span className="text-xs text-zinc-700">{rating}/5</span>
       </div>
+
+      <h2 className="mt-2 line-clamp-2 text-center text-sm font-semibold text-gray-300">
+        Favorite Worst Nightmare
+      </h2>
     </div>
   )
 }
