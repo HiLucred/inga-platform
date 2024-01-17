@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { ReviewCard } from '@/components/card/review-card'
 import { ChevronRight } from 'lucide-react'
+import { ReviewsCarousel } from '@/components/reviews-carousel'
 
 export function TrendingReviewsSection() {
   return (
@@ -18,11 +18,7 @@ export function TrendingReviewsSection() {
         </Link>
       </header>
 
-      <div className="flex w-full items-center gap-4 overflow-hidden rounded-md border border-zinc-800 bg-white bg-opacity-5 p-2">
-        {Array.from({ length: 16 }).map((_, index) => {
-          return <ReviewCard key={index} />
-        })}
-      </div>
+      <ReviewsCarousel />
     </section>
   )
 }

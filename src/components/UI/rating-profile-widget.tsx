@@ -13,7 +13,6 @@ export function RatingProfileWidget({
 }: RatingProfileWidgetProps) {
   return (
     <div className="flex gap-2 text-white">
-      {/* <Avatar /> */}
       <Image
         src="/mockup/user-place-holder.jpg"
         alt=""
