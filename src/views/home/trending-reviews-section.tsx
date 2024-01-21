@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import { ChevronRight } from 'lucide-react'
 import { ReviewsCarousel } from '@/components/reviews-carousel'
+import { ChevronRight } from 'lucide-react'
+import Link from 'next/link'
 
 export function TrendingReviewsSection() {
   return (

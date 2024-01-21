@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import { ChevronRight } from 'lucide-react'
 import { Rating } from '@/components/UI/rating'
 import { GameThumbnail } from '@/components/game-thumbnail'
+import { ChevronRight } from 'lucide-react'
+import Link from 'next/link'
 
 export function GameOfTheWeekSection() {
   return (
@@ -21,7 +21,7 @@ export function GameOfTheWeekSection() {
 
       <div className="w-fulloverflow-hidden h-full rounded-md bg-gradient-to-tr from-blue-500 to-pink-700 p-0.5">
         <div className="flex gap-3 rounded-md bg-zinc-900 p-2">
-          <GameThumbnail className="rounded-md" />
+          <GameThumbnail className="hidden rounded-md min-[340px]:block" />
 
           <div className="flex flex-1 flex-col justify-between gap-2">
             <div className="w-full border-b border-white border-opacity-10 pb-2">

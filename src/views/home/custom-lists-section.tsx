@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import { ChevronRight } from 'lucide-react'
 import { CustomListCarousel } from '@/components/custom-list-carousel'
+import { ChevronRight } from 'lucide-react'
+import Link from 'next/link'
 
 export function CustomListsSection() {
   return (

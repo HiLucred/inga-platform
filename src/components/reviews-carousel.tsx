@@ -9,7 +9,7 @@ export function ReviewsCarousel() {
       <Swiper slidesPerView={'auto'} spaceBetween={20}>
         {Array.from({ length: 16 }).map((_, index) => {
           return (
-            <SwiperSlide key={index} className="max-w-md">
+            <SwiperSlide key={index} className="max-w-sm">
               <ReviewCard key={index} />
             </SwiperSlide>
           )

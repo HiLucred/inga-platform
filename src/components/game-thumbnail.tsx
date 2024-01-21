@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import { FavoriteButton } from './UI/button/favorite-button'
-import { InspectionDialog } from './dialog/game-inspection-dialog'
 import { ComponentProps } from 'react'
 import { twMerge } from 'tailwind-merge'
+import { FavoriteButton } from './UI/button/favorite-button'
+import { InspectionDialog } from './dialog/game-inspection-dialog'
 
 type GameThumbnailProps = ComponentProps<'div'>
 
@@ -19,6 +19,7 @@ export function GameThumbnail({ className }: GameThumbnailProps) {
         alt=""
         width={144}
         height={192}
+        className="w-full"
       />
       <FavoriteButton className="absolute right-1 top-1" />
       <InspectionDialog className="absolute right-1 top-10" />

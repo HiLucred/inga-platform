@@ -1,10 +1,10 @@
-import {
-  ThumbsUpIcon,
-  MessageSquareIcon,
-  TriangleIcon,
-  CircleIcon,
-} from 'lucide-react'
 import { Rating } from '@/components/UI/rating'
+import {
+  CircleIcon,
+  MessageSquareIcon,
+  ThumbsUpIcon,
+  TriangleIcon,
+} from 'lucide-react'
 
 export function AboutGame() {
   return (
@@ -15,9 +15,9 @@ export function AboutGame() {
         </h2>
 
         <div className="mt-1 flex gap-2 text-zinc-400">
-          <span className="text-xs">Aventura</span>
-          <span className="text-xs">Romance</span>
-          <span className="text-xs">RPG</span>
+          <span className="text-xs">#Aventura</span>
+          <span className="text-xs">#Romance</span>
+          <span className="text-xs">#RPG</span>
         </div>
       </div>
 

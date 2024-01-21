@@ -1,6 +1,6 @@
-import { Rating } from './rating'
 import { RatingType } from '@/types/rating'
 import Image from 'next/image'
+import { Rating } from './rating'
 
 interface RatingProfileWidgetProps {
   username: string
@@ -12,7 +12,7 @@ export function RatingProfileWidget({
   rating,
 }: RatingProfileWidgetProps) {
   return (
-    <div className="flex gap-2 text-white">
+    <div className="flex w-full gap-2 text-white">
       <Image
         src="/mockup/user-place-holder.jpg"
         alt=""
@@ -21,7 +21,7 @@ export function RatingProfileWidget({
         className="h-12 w-12 rounded-md"
       />
 
-      <div className="flex flex-col justify-between">
+      <div className="flex w-full flex-col justify-between">
         <h3 className="text-sm font-semibold ">@{username}</h3>
 
         <div className="flex items-center gap-2">

@@ -1,13 +1,13 @@
-import Link from 'next/link'
-import { ChevronRight } from 'lucide-react'
 import { Carousel } from '@/components/carousel'
+import { ChevronRight } from 'lucide-react'
+import Link from 'next/link'
 
 export function AnticipateLaunchSection() {
   return (
     <section>
       <header className="mb-2 flex  items-center justify-between">
         <h2 className="text-xl font-semibold text-zinc-200">
-          Mal podemos esperar pelo lançamento
+          Mal podemos esperar
         </h2>
 
         <Link href="/">

@@ -2,11 +2,11 @@
 
 import * as Dialog from '@radix-ui/react-dialog'
 import { ComponentProps } from 'react'
-import { InspectionButton } from './inspection-button'
 import { AboutGame } from './about-game'
+import { Authors } from './authors'
 import { FooterActions } from './footer-actions'
 import { GameThumbnail } from './game-thumbnail'
-import { Authors } from './authors'
+import { InspectionButton } from './inspection-button'
 
 type InspectionDialogProps = ComponentProps<'button'>
 

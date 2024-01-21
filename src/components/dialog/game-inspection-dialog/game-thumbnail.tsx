@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import * as Dialog from '@radix-ui/react-dialog'
 import { XIcon } from 'lucide-react'
+import Image from 'next/image'
 
 export function GameThumbnail() {
   return (

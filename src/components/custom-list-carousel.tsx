@@ -9,7 +9,7 @@ export function CustomListCarousel() {
       <Swiper slidesPerView={'auto'} spaceBetween={10}>
         {Array.from({ length: 16 }).map((_, index) => {
           return (
-            <SwiperSlide key={index} className="max-w-xs border">
+            <SwiperSlide key={index} className="max-w-xs">
               <GameListCard
                 title="Jogos que marcaram minha infância"
                 rating={821}
