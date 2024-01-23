@@ -1,9 +1,9 @@
 'use client'
 
 import * as Collapsible from '@radix-ui/react-collapsible'
+import { XIcon as MenuCloseIcon, MenuIcon } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
-import { MenuIcon, XIcon as MenuCloseIcon } from 'lucide-react'
 import { itemsMenu, otherItemsMenu } from '../data/menu-items-data'
 
 export function MobileMenu() {
@@ -28,15 +28,14 @@ export function MobileMenu() {
               return (
                 <Link key={index} href="/">
                   <li className="flex items-center justify-between rounded-md bg-zinc-800 bg-opacity-50 px-4 py-6 font-semibold hover:bg-opacity-60">
-                    {itemMenu.name}
-                    {itemMenu.icon}
+                    <span>{itemMenu.name}</span>
+                    <i>{itemMenu.icon}</i>
                   </li>
                 </Link>
               )
             })}
           </ul>
 
-          {/* - Separator */}
           <div className="my-6 h-[1px] bg-zinc-600" />
 
           <ul className="m-auto mt-4 flex flex-col gap-2">
@@ -44,8 +43,8 @@ export function MobileMenu() {
               return (
                 <Link key={index} href="/">
                   <li className="flex items-center justify-between rounded-md bg-zinc-800 bg-opacity-50 px-4 py-6 font-semibold hover:bg-opacity-60">
-                    {otherItemMenu.name}
-                    {otherItemMenu.icon}
+                    <span>{otherItemMenu.name}</span>
+                    <i>{otherItemMenu.icon}</i>
                   </li>
                 </Link>
               )
