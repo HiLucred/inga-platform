@@ -40,7 +40,7 @@ export function GameOfTheWeekSection() {
             </p>
 
             <div className="flex items-center justify-center gap-2 rounded-md bg-zinc-800 py-2">
-              <Rating rating={3} />
+              <Rating rating={3} size="md" />
               <span className="text-xs text-gray-400">3/5</span>
             </div>
           </div>

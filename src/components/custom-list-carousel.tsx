@@ -9,9 +9,9 @@ export function CustomListCarousel() {
       <Swiper slidesPerView={'auto'} spaceBetween={10}>
         {Array.from({ length: 16 }).map((_, index) => {
           return (
-            <SwiperSlide key={index} className="max-w-xs">
+            <SwiperSlide key={index} className="max-w-sm">
               <GameListCard
-                title="Jogos que marcaram minha infância"
+                title="Os melhores jogos feitos no Norte do Brasil"
                 rating={821}
                 comments={61}
               />

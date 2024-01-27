@@ -11,41 +11,41 @@ interface GameListCardProps extends ComponentProps<'div'> {
 
 export function GameListCard({ title, rating, comments }: GameListCardProps) {
   return (
-    <div className="flex w-full max-w-xs flex-col items-center justify-center">
-      <div className="relative h-48 w-full rounded-md bg-white bg-opacity-20">
+    <div className="flex w-full max-w-sm flex-col items-center justify-center">
+      <div className="relative h-52 w-full rounded-md bg-green-500">
         <FavoriteButton className="absolute right-1 top-1" />
 
-        <div className="absolute bottom-0 flex w-full  gap-2 bg-black/10 p-2">
-          <Image
-            src="/mockup/user-place-holder.jpg"
-            alt=""
-            width={320}
-            height={320}
-            className="h-12 w-12 rounded-md"
-          />
+        <div className="absolute bottom-0 flex w-full flex-col bg-black/40 p-2">
+          <div className="flex items-center gap-2">
+            <Image
+              src="/mockup/user-place-holder.jpg"
+              alt=""
+              width={320}
+              height={320}
+              className="h-12 w-12 rounded-md"
+            />
 
-          <div className="flex w-full flex-col overflow-hidden">
-            <h3 className="truncate pb-1 text-sm font-semibold text-zinc-300">
-              {title}
-            </h3>
+            <div className="flex w-full flex-col overflow-hidden">
+              <h3 className="text-sm font-semibold text-white">{title}</h3>
+            </div>
+          </div>
 
-            <div className="flex w-full items-center justify-between text-white">
-              <h4 className="hidden text-xs text-zinc-300 min-[270px]:block">
-                @galupd
-              </h4>
+          <div className="mt-1 flex w-full items-center justify-between rounded-md bg-black/20 px-2 py-1 text-white">
+            <h4 className="hidden text-xs text-zinc-300 min-[270px]:block">
+              @galupd
+            </h4>
 
-              <div className="flex h-full">
-                <div className="flex items-center justify-center gap-1">
-                  <ThumbsUpIcon width={16} className="text-blue-500" />
-                  <span className="text-xs">{rating}</span>
-                </div>
+            <div className="flex h-full">
+              <div className="flex items-center justify-center gap-1">
+                <ThumbsUpIcon width={16} className="text-blue-500" />
+                <span className="text-xs">{rating}</span>
+              </div>
 
-                <DotIcon className="text-zinc-800" />
+              <DotIcon className="text-zinc-800" />
 
-                <div className="flex items-center gap-1">
-                  <MessageSquareIcon width={16} className="text-yellow-500" />
-                  <span className="text-xs">{comments}</span>
-                </div>
+              <div className="flex items-center gap-1">
+                <MessageSquareIcon width={16} className="text-yellow-500" />
+                <span className="text-xs">{comments}</span>
               </div>
             </div>
           </div>

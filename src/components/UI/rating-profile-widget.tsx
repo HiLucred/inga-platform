@@ -18,7 +18,7 @@ export function RatingProfileWidget({
         alt=""
         width={320}
         height={320}
-        className="h-12 w-12 rounded-md"
+        className="hidden h-12 w-12 rounded-md min-[380px]:block"
       />
 
       <div className="flex w-full flex-col justify-between">
