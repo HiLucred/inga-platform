@@ -1,6 +1,6 @@
-import Link from 'next/link'
+import { AuthorsCarousel } from '@/components/carousel/authors-carousel'
 import { ChevronRight } from 'lucide-react'
-import { AuthorsCarousel } from '@/components/authors-carousel'
+import Link from 'next/link'
 
 export function ExploreNewArtistsSection() {
   return (

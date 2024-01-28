@@ -5,14 +5,14 @@ import 'swiper/css/bundle'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-import { register } from 'swiper/element/bundle'
+import { Footer } from '@/components/layout/footer'
+import { NavBar } from '@/components/layout/nav-bar'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { NavBar } from '@/components/layout/nav-bar'
-import { Footer } from '@/components/layout/footer'
+import { register } from 'swiper/element/bundle'
 
 const inter = Inter({ subsets: ['latin'] })
-// Swiper
+// Swiper init
 register()
 
 export const metadata: Metadata = {
@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={inter.className}>
         <NavBar />
-        {children}
+        <div className="mt-[5.5rem] max-w-limit-screen">{children}</div>
         <Footer />
       </body>
     </html>

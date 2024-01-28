@@ -1,7 +1,7 @@
 'use client'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Avatar } from './UI/avatar'
+import { Avatar } from '../UI/avatar'
 
 export function AuthorsCarousel() {
   return (

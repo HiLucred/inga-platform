@@ -1,4 +1,5 @@
 import { RatingType } from '@/types/rating'
+import Link from 'next/link'
 import { ComponentProps } from 'react'
 import { twMerge } from 'tailwind-merge'
 import { Rating } from '../UI/rating'
@@ -20,9 +21,14 @@ export function GameCard({ rating, className }: GameCardProps) {
         </span>
       </div>
 
-      {/* <h2 className="mt-2 line-clamp-2 text-center text-sm font-semibold text-gray-300">
-        Favorite Worst Nightmare
-      </h2> */}
+      <Link
+        href="/game/favorite-worst-nighmare"
+        className="text-blue-500 hover:underline"
+      >
+        <h2 className="mt-2 line-clamp-2 text-center text-sm font-semibold text-gray-300">
+          Favorite Worst Nightmare
+        </h2>
+      </Link>
     </div>
   )
 }

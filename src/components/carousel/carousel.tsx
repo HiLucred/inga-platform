@@ -1,7 +1,7 @@
 'use client'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { GameCard } from './card/game-card'
+import { GameCard } from '../card/game-card'
 
 export function Carousel() {
   return (

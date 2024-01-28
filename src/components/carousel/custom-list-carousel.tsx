@@ -1,16 +1,20 @@
 'use client'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { ReviewCard } from './card/review-card'
+import { GameListCard } from '../card/game-list-card'
 
-export function ReviewsCarousel() {
+export function CustomListCarousel() {
   return (
     <div className="h-full w-full rounded-md border border-zinc-800 bg-white bg-opacity-5 p-2">
-      <Swiper slidesPerView={'auto'} spaceBetween={20}>
+      <Swiper slidesPerView={'auto'} spaceBetween={10}>
         {Array.from({ length: 16 }).map((_, index) => {
           return (
             <SwiperSlide key={index} className="max-w-sm">
-              <ReviewCard key={index} />
+              <GameListCard
+                title="Os melhores jogos feitos no Norte do Brasil"
+                rating={821}
+                comments={61}
+              />
             </SwiperSlide>
           )
         })}

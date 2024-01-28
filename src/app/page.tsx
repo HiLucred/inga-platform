@@ -11,7 +11,7 @@ import { UserArea } from '@/views/home/user-area'
 
 export default function Home() {
   return (
-    <main className="m-auto mt-[5.5rem] flex h-full w-full max-w-limit-screen flex-col gap-6 px-[4%] pb-[4%]">
+    <main className="m-auto flex h-full w-full flex-col gap-6 px-[4%] pb-[4%]">
       <UserArea />
       <LatestGamesSection />
       <ExploreNewArtistsSection />

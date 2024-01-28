@@ -1,4 +1,4 @@
-import { Carousel } from '@/components/carousel'
+import { Carousel } from '@/components/carousel/carousel'
 import { ChevronRight } from 'lucide-react'
 import Link from 'next/link'
 

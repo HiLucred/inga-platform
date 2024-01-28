@@ -1,4 +1,4 @@
-import { ReviewsCarousel } from '@/components/reviews-carousel'
+import { ReviewsCarousel } from '@/components/carousel/reviews-carousel'
 import { ChevronRight } from 'lucide-react'
 import Link from 'next/link'
 

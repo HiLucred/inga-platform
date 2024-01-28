@@ -12,10 +12,10 @@ interface GameListCardProps extends ComponentProps<'div'> {
 export function GameListCard({ title, rating, comments }: GameListCardProps) {
   return (
     <div className="flex w-full max-w-sm flex-col items-center justify-center">
-      <div className="relative h-52 w-full rounded-md bg-green-500">
+      <div className="relative h-52 w-full rounded-md bg-green-800">
         <FavoriteButton className="absolute right-1 top-1" />
 
-        <div className="absolute bottom-0 flex w-full flex-col bg-black/40 p-2">
+        <div className="absolute bottom-0 flex w-full flex-col rounded-b-md bg-black/40 p-2">
           <div className="flex items-center gap-2">
             <Image
               src="/mockup/user-place-holder.jpg"

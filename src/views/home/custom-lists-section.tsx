@@ -1,4 +1,4 @@
-import { CustomListCarousel } from '@/components/custom-list-carousel'
+import { CustomListCarousel } from '@/components/carousel/custom-list-carousel'
 import { ChevronRight } from 'lucide-react'
 import Link from 'next/link'
 

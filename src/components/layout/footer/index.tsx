@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import Logo from '@/inga-logo.svg'
+import Image from 'next/image'
 
 export function Footer() {
   return (
